@@ -16,7 +16,7 @@ module.exports = {
   | interacting with SQL databases.
   |
   */
-  connection: Env.get('DB_CONNECTION', 'sqlite'),
+  connection: Env.get('DB_CONNECTION', 'pg'),
 
   /*
   |--------------------------------------------------------------------------
@@ -73,10 +73,10 @@ module.exports = {
   pg: {
     client: 'pg',
     connection: {
-      host: Env.get('DB_HOST', 'localhost'),
-      port: Env.get('DB_PORT', ''),
-      user: Env.get('DB_USER', 'root'),
-      password: Env.get('DB_PASSWORD', ''),
+      host: Env.get('DB_HOST', 'ec2-34-192-173-173.compute-1.amazonaws.com'),
+      port: Env.get('DB_PORT', '5432'),
+      user: Env.get('DB_USER', 'mphxbrptckdxmi'),
+      password: Env.get('DB_PASSWORD', 'a22704fef8bd111e7c6d81769ed9d1f8e091226229ff2d3421595740c4accafb'),
       database: Env.get('DB_DATABASE', 'dd35vrqpgm0l0u')
     },
     debug: Env.get('DB_DEBUG', false)
