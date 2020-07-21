@@ -78,6 +78,7 @@ module.exports = {
       user: Env.get('DB_USER', 'mphxbrptckdxmi'),
       password: Env.get('DB_PASSWORD', 'a22704fef8bd111e7c6d81769ed9d1f8e091226229ff2d3421595740c4accafb'),
       database: Env.get('DB_DATABASE', 'dd35vrqpgm0l0u')
+      
     },
     debug: Env.get('DB_DEBUG', false)
   }
